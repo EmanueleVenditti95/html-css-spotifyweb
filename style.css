@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* COLORS PALETTE */
+:root {
+    --black:#000000;
+    --light-black:#141922;
+    --dark-gray:#282828;
+    --gray:#5A5A5A;
+    --light-gray:#c1c1c1;
+    --light:#ffffff;
+}
+
+/* LAYOUT */
+.container-full {
+    max-width: 100%;
+}
+
+.row {
+    display: flex;
+}
+
+.row-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.toolbar {
+    height: 90px;
+}
+
+/* DEBUG RULES */
+.main-content.debug {
+    background-color: #fa00ff;
+    min-height: 100px;
+}
+
+.toolbar.debug {
+    background-color: rgb(15, 254, 67);
+}
+
+/* MACRO LAYOUT */
+.main-content {
+    flex-grow: 1;
+    height: calc(100vh - 90px);
+}
