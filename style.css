@@ -71,7 +71,7 @@ img {
 }
 
 /* MACRO LAYOUT */
-.main-content {
+main.container-full {
     flex-grow: 1;
     height: calc(100vh - 90px);
 }
