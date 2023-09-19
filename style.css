@@ -84,6 +84,7 @@ main.container-full {
     align-items: center;
     justify-content: space-between;
     color: var(--light-gray);
+    gap: 20px;
 }
 
 .toolbar .player {
@@ -98,10 +99,21 @@ main.container-full {
     font-size: 20px;
 }
 
-.player .row,.volume {
+.player {
+    max-width: 530px;
+    gap: 20px;
+}
+
+.player .row {
     align-items: center;
     gap: 30px;
     justify-content: center;   
+}
+
+.slider.row {
+    justify-content: space-between;
+    display: flex;
+    gap: 20px;
 }
 
 .slider {
@@ -113,10 +125,12 @@ main.container-full {
     background-color: var(--gray);
     min-width: 130px;
     border-radius: 4px;
+    flex-grow: 1;
 }
 
-.toolbar img {
-    max-width: 42px;
+.track img {
+    width: 42px;
+    height: 42px;
 }
 
 .slider-volume {
@@ -130,4 +144,8 @@ main.container-full {
     align-items: center;
     gap: 15px;
     font-size: 12px;
+}
+
+.track {
+    flex-shrink: 0;
 }
