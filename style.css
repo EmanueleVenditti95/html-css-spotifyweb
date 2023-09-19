@@ -94,6 +94,11 @@ main.container-full {
 
 .fa-circle-play {
     font-size: 30px;
+    transition: all 0.2s;
+}
+
+.fa-circle-play:hover {
+    transform: scale(1.2);
 }
 
 .row-player {
@@ -160,4 +165,13 @@ main.container-full {
 
 .track-name {
     font-size: 8px;
+}
+
+.track-name:hover {
+    text-decoration: underline;
+    color: var(--light);
+}
+
+.heart:hover,.folder:hover {
+    color: var(--light);
 }
