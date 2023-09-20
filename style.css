@@ -134,6 +134,26 @@ main.container-full {
     width: 100%;
     border-radius: 4px;
     flex-grow: 1;
+    position: relative;
+}
+
+.progression-bar {
+    height: 4px;
+    background-color: var(--light-gray);
+    width: 20%;
+    border-radius: 4px;
+    position: absolute;
+}
+
+.circle-handler {
+    height: 12px;
+    width: 12px;
+    background-color: var(--light-gray);
+    border-radius: 50%;
+    position: absolute;
+    left: 20%;
+    top: 0;
+    transform: translate(-50%,-35%);
 }
 
 .track img {
@@ -148,11 +168,13 @@ main.container-full {
 .track-save {
     gap: 10px;
 }
+
 .slider-volume {
     height: 4px;
     background-color: var(--gray);
     width: 40%;
     border-radius: 4px;
+    position: relative;
 }
 
 .volume.row {
