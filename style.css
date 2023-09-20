@@ -220,8 +220,12 @@ main.container-full {
 }
 
 .logo {
-   width: 180px; 
+   width: 130px; 
    margin: 10px 0;
+}
+
+.logo-small {
+    display: none;
 }
 
 .menu .row, .user .row {
@@ -288,6 +292,47 @@ main.container-full {
 @media (max-width: 575.98px) {
     .sidebar {
         width: 50px;
+    }
+
+    .sidebar .logo {
+        display: none;
+    }
+
+    .sidebar .logo-small {
+        display: block;
+        width: 30px;
+    }
+
+    .logo-small,.menu-logo {
+        width: 20px
+    }
+
+    .sidebar .card {
+        padding: 0;
+    }
+
+    .card .row, .card.row {
+        justify-content: center;
+    }
+
+    .install {
+        border-bottom: 0;
+    }
+
+    .user,.menu-logo,.logo-small {
+        padding: 8px 0;
+    }
+
+    .menu-logo.portrait {
+        margin-bottom: 8px;
+    }
+
+    .playlist {
+        display: none;
+    }
+
+    .hide-text {
+        display: none;
     }
 
     .track img {
