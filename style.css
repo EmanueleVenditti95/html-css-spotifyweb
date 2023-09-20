@@ -96,6 +96,7 @@ main.container-full {
 
 .toolbar .player {
     width: 50%;
+    gap: 20px;
 }
 
 .fa-circle-play {
@@ -109,11 +110,6 @@ main.container-full {
 
 .row-player {
     font-size: 20px;
-}
-
-.player {
-    max-width: 530px;
-    gap: 20px;
 }
 
 .player .row {
@@ -135,7 +131,7 @@ main.container-full {
 .slider .bar {
     height: 4px;
     background-color: var(--gray);
-    min-width: 130px;
+    width: 100%;
     border-radius: 4px;
     flex-grow: 1;
 }
@@ -155,23 +151,26 @@ main.container-full {
 .slider-volume {
     height: 4px;
     background-color: var(--gray);
-    min-width: 85px;
+    width: 40%;
     border-radius: 4px;
 }
 
 .volume.row {
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     font-size: 12px;
+    width: 30%;
+    justify-content: flex-end;
 }
 
 .track {
     align-items: center;
     gap: 20px;
+    width: 30%;
 }
 
 .author {
-    font-size: 14px;
+    font-size: 12px;
     color: var(--light);
 }
 
