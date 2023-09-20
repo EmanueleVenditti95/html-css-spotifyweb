@@ -16,6 +16,7 @@ a {
 
 img {
     max-width: 100%;
+    display: block;
 }
 
 /* COLORS PALETTE */
@@ -214,7 +215,7 @@ main.container-full {
     width: 24px;
 }
 
-.menu .row {
+.menu .row, .user .row {
     gap: 5px;
 }
 
@@ -223,7 +224,7 @@ main.container-full {
    margin: 10px 0;
 }
 
-.menu .row {
+.menu .row, .user .row {
     align-items: center;
 }
 
@@ -251,8 +252,36 @@ main.container-full {
     margin: 5px 5px 5px 0;
 }
 
-.playlist.card {
+.card {
     line-height: 30px;
+}
+
+.user {
+    margin-top: auto;
+}
+
+.user .menu-logo {
+    width: 16px;
+}
+
+.install {
+    border-bottom: 1px solid var(--gray);
+    margin-bottom: 10px;
+}
+
+.menu-logo.portrait {
+    background-color: var(--gray);
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    padding: 2px;
+    overflow: hidden;
+}
+
+.username {
+    color: var(--light);
+    font-size: 16px;
 }
 
 /* MEDIA QUERY */
