@@ -58,6 +58,7 @@ body.row-column {
     width: 230px;
     background-color: var(--black);
     color: var(--gray);
+    flex-shrink: 0;
 }
 
 .main-content {
@@ -311,6 +312,21 @@ main.container-full {
     padding: 10px 40px;
     font-weight: 700;
     margin-right: 10px;
+    font-size: 12px;
+}
+
+/* NAVBAR */
+nav {
+    color: var(--gray);
+    margin-top: 110px;
+}
+
+nav .row {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 /* MEDIA QUERY */
