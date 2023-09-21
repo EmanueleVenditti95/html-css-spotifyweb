@@ -133,12 +133,12 @@ main.container-full {
     gap: 20px;
 }
 
-.fa-circle-play {
+.circle-play {
     font-size: 30px;
     transition: all 0.2s;
 }
 
-.fa-circle-play:hover {
+.circle-play:hover {
     transform: scale(1.2);
 }
 
@@ -336,7 +336,7 @@ main.container-full {
     opacity: 0.8;
     height: 90px;
     width: 100%;
-    position: sticky;  /*USATO STICKY E NON FIXED PERCHE SPARISCE IL BUTTON*/
+    position: sticky;
     top: 0;
     display: flex;
     justify-content: flex-end;
@@ -356,7 +356,7 @@ main.container-full {
 /* NAVBAR */
 nav {
     color: var(--gray);
-    margin-top: 110px;
+    margin-top: 20px;
     margin-bottom: 40px;
 }
 
@@ -404,6 +404,27 @@ nav .row {
 
 .album-selection .portrait {
     border-radius: 50%;
+}
+
+.album-cover {
+    position: relative;
+}
+
+.play-button {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: var(--light);
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.play-button:hover {
+    opacity: 1;
 }
 
 /* MEDIA QUERY */
