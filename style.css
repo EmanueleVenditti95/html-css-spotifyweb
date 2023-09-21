@@ -24,9 +24,10 @@ img {
     --black:#000000;
     --light-black:#141922;
     --dark-gray:#282828;
-    --gray:#5A5A5A;
+    --gray:#7c7a7a;
     --light-gray:#c1c1c1;
     --light:white;
+    --green: #adff2f;
 }
 
 /* LAYOUT */
@@ -215,8 +216,13 @@ main.container-full {
     width: 24px;
 }
 
+.menu {
+    padding: 10px 0;
+}
+
 .menu .row, .user .row {
     gap: 5px;
+    align-items: center;
 }
 
 .logo {
@@ -228,14 +234,11 @@ main.container-full {
     display: none;
 }
 
-.menu .row, .user .row {
-    align-items: center;
-}
-
 .card {
-    padding: 10px 20px;
+    padding: 0 20px;
     font-size: 12px;
     font-weight: 600;
+    line-height: 30px;
 }
 
 .playlist .title {
@@ -256,16 +259,8 @@ main.container-full {
     margin: 5px 5px 5px 0;
 }
 
-.card {
-    line-height: 30px;
-}
-
 .user {
     margin-top: auto;
-}
-
-.user .menu-logo {
-    width: 16px;
 }
 
 .install {
@@ -286,6 +281,21 @@ main.container-full {
 .username {
     color: var(--light);
     font-size: 16px;
+}
+
+.menu .row {
+    position: relative;
+}
+
+.menu-item.active::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 4px;
+    background-color: var(--green);
+    top: 0;
+    left: 0;
 }
 
 /* MEDIA QUERY */
