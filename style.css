@@ -142,6 +142,10 @@ main.container-full {
     transform: scale(1.2);
 }
 
+.button:hover {
+    transform: scale(1.1);
+}
+
 .row-player {
     font-size: 20px;
 }
@@ -359,8 +363,10 @@ main.container-full {
     border-radius: 999px;
     padding: 10px 40px;
     font-weight: 700;
-    margin-right: 10px;
+    margin-right: 20px;
     font-size: 12px;
+    transition: all 0.2s;
+    display: block;
 }
 
 /* NAVBAR */
