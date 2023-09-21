@@ -384,6 +384,22 @@ nav .row {
     font-weight: 600;
 }
 
+nav li:hover {
+    color: var(--light);
+}
+
+.sidebar .row.card:hover {
+    color: var(--light);
+}
+
+.playlist li:hover {
+    color: var(--light);
+}
+
+.install:hover {
+    color: var(--light);
+}
+
 /* ALBUM SELECTION */
 .album-selection .title,.album.card {
     color: var(--light);
