@@ -333,9 +333,10 @@ main.container-full {
 /* UPGRADE BAR */
 .upgrade {
     background-color: var(--medium-black);
+    opacity: 0.8;
     height: 90px;
     width: 100%;
-    position: absolute;
+    position: sticky;  /*USATO STICKY E NON FIXED PERCHE SPARISCE IL BUTTON*/
     top: 0;
     display: flex;
     justify-content: flex-end;
