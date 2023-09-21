@@ -23,6 +23,7 @@ img {
 :root {
     --black:#000000;
     --light-black:#141922;
+    --medium-black:#080b12;
     --dark-gray:#282828;
     --gray:#7c7a7a;
     --light-gray:#c1c1c1;
@@ -61,20 +62,13 @@ body.row-column {
 
 .main-content {
     flex-grow: 1;
+    position: relative;
+    background-color: var(--light-black);
+    overflow: auto;
 }
 
 /* DEBUG RULES */
-.main-content.debug {
-    background-color: #0084fd;
-}
 
-.sidebar.debug {
-    background-color: #ff8d23;
-}
-
-.toolbar .debug {
-    border: solid 1px yellow;
-}
 
 /* MACRO LAYOUT */
 main.container-full {
@@ -296,6 +290,27 @@ main.container-full {
     background-color: var(--green);
     top: 0;
     left: 0;
+}
+
+/* UPGRADE BAR */
+.upgrade {
+    background-color: var(--medium-black);
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button {
+    color: var(--light);
+    border: 1px solid var(--light);
+    border-radius: 999px;
+    padding: 10px 40px;
+    font-weight: 700;
+    margin-right: 10px;
 }
 
 /* MEDIA QUERY */
