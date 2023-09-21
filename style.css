@@ -185,9 +185,18 @@ main.container-full {
     background-color: var(--light-gray);
     border-radius: 50%;
     position: absolute;
-    left: 20%;
+    left: 100%;
     top: 0;
     transform: translate(-50%,-35%);
+    opacity: 0;
+}
+
+.progression-bar:hover .circle-handler {
+    opacity: 1;
+}
+
+.progression-bar:hover {
+    background-color: var(--green);
 }
 
 .track img {
@@ -341,6 +350,7 @@ main.container-full {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    z-index: 1;
 }
 
 .button {
