@@ -28,7 +28,7 @@ img {
     --gray:#7c7a7a;
     --light-gray:#c1c1c1;
     --light:white;
-    --green: #adff2f;
+    --green: #92f400;
 }
 
 /* LAYOUT */
@@ -93,6 +93,9 @@ body.row-column {
     flex-wrap: wrap;
 }
 
+.p-relative {
+    position: relative;
+}
 /* DEBUG RULES */
 .container-flex.debug {
     border: 1px solid black;
@@ -345,6 +348,7 @@ main.container-full {
     background-color: var(--green);
     top: 0;
     left: 0;
+    cursor: pointer;
 }
 
 /* UPGRADE BAR */
@@ -374,13 +378,14 @@ main.container-full {
 }
 
 /* NAVBAR */
-nav {
+.nav-select {
     color: var(--gray);
     margin-top: 20px;
     margin-bottom: 40px;
+    position: relative;
 }
 
-nav .row {
+.nav-select.row {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
@@ -388,8 +393,16 @@ nav .row {
     font-weight: 600;
 }
 
-nav li:hover {
+.nav-select li:hover::before {
     color: var(--light);
+    cursor: pointer;
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 80%;
+    background-color: var(--green);
+    bottom: -5px;
+    left: 10%;
 }
 
 .sidebar .row.card:hover {
