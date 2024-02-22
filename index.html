@@ -10,31 +10,37 @@
 </head>
 <body class="row-column">
     <main class="container-full row">
+        <!-- SIDEBAR -->
         <aside class="sidebar row-column">
-
                 <div class="card row">
                     <img class="logo" src="./img/logo.svg" alt="Spotify-Logo">
                     <img class="logo-small" src="./img/logo-small.svg" alt="Spotify-Logo">
                 </div>
 
-                <ul class="menu ">
+                <ul class="menu">
                     <li>
-                        <div class="row card">
-                            <figure class="menu-logo menu-item active"><img src="./img/home.svg" alt="Home"></figure> 
+                        <div class="row card menu-item">
+                            <figure class="menu-logo">
+                                <img src="./img/home.svg" alt="Home">
+                            </figure> 
                             <div class="hide-text">Home</div>
                         </div>
                     </li>   
 
                     <li>
-                        <div class="row card">
-                            <figure class="menu-logo menu-item"><img src="./img/search.svg" alt="Search"></figure> 
+                        <div class="row card menu-item">
+                            <figure class="menu-logo">
+                                <img src="./img/search.svg" alt="Search">
+                            </figure> 
                             <div class="hide-text">Cerca</div>
                         </div>
                     </li>    
                         
                     <li>
-                        <div class="row card">
-                            <figure class="menu-logo menu-item"><img src="./img/libreria.svg" alt="Library"></figure> 
+                        <div class="row card menu-item">
+                            <figure class="menu-logo">
+                                <img src="./img/libreria.svg" alt="Library">
+                            </figure> 
                             <div class="hide-text">La tua libreria</div>
                         </div>
                     </li>    
@@ -64,7 +70,7 @@
         </aside>
 
         <div class="main-content">
-
+        <!-- UPGRADE BAR     -->
             <section class="upgrade">
                 <div >
                     <a class="button" href="">EFFETTUA L'UPGRADE</a>
@@ -83,14 +89,14 @@
                     </ul>
                 </nav>
             </section>
-
+        <!-- RECENTLY PLAYED SECTION     -->
             <section class="album-selection">
 
                 <div class="container-flex">
                     <div class="row wrap">
                         <h1 class="title col-12">Recently Played</h1>
                     </div>
-                    
+        
                     <ul class="row wrap">
                         <li class="col-2 album-card">
                             <figure class="album-cover">
@@ -142,7 +148,7 @@
                         </li>
                     </ul>                  
                 </div>
-               
+        <!-- PERSONAL MIX -->       
                 <div class="container-flex">
                     <div class="row wrap">
                         <h1 class="title col-12">Creato per John Doe</h1>
@@ -166,7 +172,7 @@
                         </li>
                     </ul>                  
                 </div>
-
+        <!-- MOST POPULAR ARTISTS -->
                 <div class="container-flex">
                     <div class="row wrap">
                         <h1 class="title col-12">Artisti più popolari</h1>
@@ -195,13 +201,14 @@
         </div>
     </main>
 
+        <!-- TOOLBAR -->
     <div class="toolbar container-full">
 
         <div class="track row">
             <div class="track-info row">
                 <img src="./img/sinister.jpeg" alt="">
                 <div class=" row-column">
-                    <div class="author">Sinister</div>
+                    <div class="author">Autore</div>
                     <a href=""class="track-name">Brano Nome</a>
                 </div>
             </div>
@@ -215,7 +222,9 @@
             <div class="row-player row">
                 <i class="fa-solid fa-shuffle"></i> 
                 <i class="fa-solid fa-backward-step"></i> 
-                <div class="circle-play"><i class="fa-regular fa-circle-play"></i></div>
+                <div class="circle-play">
+                    <i class="fa-regular fa-circle-play"></i>
+                </div>
                 <i class="fa-solid fa-forward-step"></i>
                 <i class="fa-solid fa-rotate-right"></i>
             </div>
